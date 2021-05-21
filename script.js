@@ -53,7 +53,7 @@ sprint_editor.registerBlock('my_advantages', function ($, $el, data, settings) {
             let ImageBlock = $(this).find('.sp-block-my_advantages-image');
 
             element.block = sprint_editor.collectData(
-                ImageBlock.data('uid')
+                $(this).data('uid')
             )
 
             // Ищем блок с изображением
